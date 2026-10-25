@@ -16,7 +16,7 @@ public class BankAccount {
         }
 
         this.balance = new Balance(0, currency);
-        if (this.promo.equals(promo)){
+        if (BankAccount.promo.equals(promo)){
             this.balance = this.balance.add(promoMoney.getKopecks());
         }
         this.name = name;
